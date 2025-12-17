@@ -1,0 +1,9 @@
+{
+  "name": "batch-rename",
+  "version": "0.0.1",
+  "description": "基于 Node 的批量文件名重命名工具库",
+  "main": "batchRename.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
