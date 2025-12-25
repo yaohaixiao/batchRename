@@ -74,7 +74,7 @@ const batchRename = (folderPath, options) => {
       config.names = names
 
       sortFiles(files, sortFn).forEach(function (oldFileName, index) {
-        const name = namesCount ? names[index] : ''
+        const name = namesCount && !config.autoIndex ? names[index] : ''
 
         rename(absoluteFolderPath, oldFileName, name || index, config)
       })
